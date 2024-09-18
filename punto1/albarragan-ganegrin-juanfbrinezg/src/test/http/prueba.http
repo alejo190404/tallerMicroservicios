@@ -1,5 +1,11 @@
 ###
-GET http://localhost:8080/nombre/albarragan
+GET http://localhost:8080/albarragan-ganegrin-juanfbrinezg/nombre/albarragan
+
+###
+GET http://localhost:8080/albarragan-ganegrin-juanfbrinezg/nombre/ganegrin
+
+###
+GET http://localhost:8080/albarragan-ganegrin-juanfbrinezg/nombre/juanfbrinezg
 
 ###
 GET http://localhost:8080/nombre/ganegrin
