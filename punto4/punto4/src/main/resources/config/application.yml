@@ -1,0 +1,9 @@
+
+eureka:
+  client:
+    registerWithEureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9988/eureka/}
+  instance:
+    prefer-ip-address: true
+
