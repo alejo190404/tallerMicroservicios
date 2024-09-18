@@ -2,3 +2,13 @@ spring:
     application:
         name: albarragan-ganegrin-juanfbrinezg
 
+eureka:
+  client:
+    # To report to Eureka when this service is up
+    registerWithEureka: true
+    # Eureka server URL
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9988/eureka/}
+  instance:
+    # To avoid using DNS
+    prefer-ip-address: true
