@@ -31,7 +31,7 @@ public class NombreController {
 
     @GetMapping("/juanfbrinezg")
     public ResponseEntity<String> getJuanFelipe() {
-        String data = "{ \"data\" : \"Juan Felipe Briñez Gómezz\"}";
+        String data = "{ \"data\" : \"Juan Felipe Briñez Gómez\"}";
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(data);
