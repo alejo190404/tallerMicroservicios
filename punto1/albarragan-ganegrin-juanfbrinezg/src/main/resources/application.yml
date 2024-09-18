@@ -2,35 +2,7 @@ spring:
     application:
         name: albarragan-ganegrin-juanfbrinezg
 
-eureka:
-  client:
-    # To report to Eureka when this service is up
-    registerWithEureka: true
-    # Eureka server URL
-    service-url:
-      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9988/eureka/}
-  instance:
-    # To avoid using DNS
-    prefer-ip-address: true
-
-info:
-  app:
-    name: albarragan-ganegrin-juanfbrinezg
-    description: Un microservicio cuyos endpints retornan el nombre del integrante, cuyo usuario está en el url
-
-management:
-    endpoints:
-        web:
-            exposure:
-                include: "*"
-    endpoint:
-        health:
-            show-details: always
-    info:
-        env:
-            enabled: true
-
-server:
-  # To avoid colliding with other apps in port 8080
-  port: 8081
+    config:
+        # Config server url
+        import: configserver:http://localhost:8888
 

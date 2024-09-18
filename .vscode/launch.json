@@ -29,6 +29,16 @@
             "projectName": "punto3",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Punto4Application<punto4>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.punto4.Punto4Application",
+            "projectName": "punto4",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

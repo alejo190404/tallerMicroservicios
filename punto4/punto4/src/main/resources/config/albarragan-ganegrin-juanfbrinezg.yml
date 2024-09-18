@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: albarragan-ganegrin-juanfbrinezg
+
+server:
+  port: 8081
+
+
+info:
+  app:
+    name: albarragan-ganegrin-juanfbrinezg
+    description: Un microservicio cuyos endpints retornan el nombre del integrante, cuyo usuario está en el url
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+    endpoint:
+        health:
+            show-details: always
+    info:
+        env:
+            enabled: true
