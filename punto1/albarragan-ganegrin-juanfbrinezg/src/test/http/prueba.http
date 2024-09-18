@@ -1,2 +1,20 @@
 ###
+GET http://localhost:8080/nombre/albarragan
+
+###
+GET http://localhost:8080/nombre/ganegrin
+
+###
 GET http://localhost:8080/nombre/juanfbrinezg
+
+###
+GET http://localhost:8080/actuator/health
+
+###
+GET http://localhost:8080/actuator/info
+
+###
+GET http://localhost:8080/actuator/env
+
+###
+GET http://localhost:8080/actuator/metrics
