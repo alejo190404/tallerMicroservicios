@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: punto3
+    cloud:
+        gateway:
+            discovery:
+                locator:
+                    enabled: true
+                    lowerCaseServiceId: true
+    
+server:
+    port: 8080
+
+eureka:
+    client:
+        registerWithEureka: true
+        service-url:
+            defaultZone: ${EUREKA_SERVER_URL:http://localhost:9988/eureka/}
+    instance:
+        prefer-ip-address: true
